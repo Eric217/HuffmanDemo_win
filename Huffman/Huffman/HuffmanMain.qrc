@@ -1,4 +1,5 @@
 <RCC>
-    <qresource prefix="HuffmanMain">
+    <qresource prefix="/HuffmanMain">
+        <file>Resources/background.png</file>
     </qresource>
 </RCC>

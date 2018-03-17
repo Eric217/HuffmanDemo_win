@@ -13,18 +13,19 @@
   <property name="windowTitle">
    <string>Huffman</string>
   </property>
-  <property name="iconSize">
-   <size>
-    <width>26</width>
-    <height>23</height>
-   </size>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../Desktop/新建文件夹/resource/树.png</normaloff>../../../../../Desktop/新建文件夹/resource/树.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#HuffmanMain{background-image: url(:/background.png);}</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>46</y>
+      <y>28</y>
       <width>177</width>
       <height>48</height>
      </rect>
@@ -40,7 +41,7 @@
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>130</y>
+      <y>110</y>
       <width>421</width>
       <height>351</height>
      </rect>
@@ -53,6 +54,15 @@ background-color:rgba(255,255,255,0.1);</string>
      <number>0</number>
     </property>
     <widget class="QWidget" name="codeTab">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI Light</family>
+       <pointsize>16</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
      <attribute name="title">
       <string>CODE</string>
      </attribute>
@@ -90,6 +100,9 @@ background-color:rgba(255,255,255,0.1);</string>
       <property name="styleSheet">
        <string notr="true">font: 25 10pt &quot;Microsoft JhengHei UI Light&quot;;</string>
       </property>
+      <property name="lineWrapMode">
+       <enum>QTextEdit::WidgetWidth</enum>
+      </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -119,7 +132,7 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>10</x>
         <y>180</y>
-        <width>391</width>
+        <width>394</width>
         <height>118</height>
        </rect>
       </property>
@@ -140,6 +153,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="styleSheet">
        <string notr="true">font: 25 10pt &quot;Microsoft JhengHei UI Light&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="textUploadButton">
@@ -186,8 +202,8 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="iconSize">
        <size>
-        <width>26</width>
-        <height>23</height>
+        <width>24</width>
+        <height>24</height>
        </size>
       </property>
       <property name="flat">
@@ -203,8 +219,8 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>30</y>
-        <width>391</width>
+        <y>33</y>
+        <width>394</width>
         <height>111</height>
        </rect>
       </property>
@@ -255,8 +271,8 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>10</x>
         <y>180</y>
-        <width>391</width>
-        <height>121</height>
+        <width>394</width>
+        <height>118</height>
        </rect>
       </property>
       <property name="maximumSize">
@@ -278,7 +294,7 @@ p, li { white-space: pre-wrap; }
        <string notr="true">font: 25 10pt &quot;Microsoft JhengHei UI Light&quot;;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="binaryUploadButton_2">
+     <widget class="QPushButton" name="binaryUploadButton">
       <property name="geometry">
        <rect>
         <x>320</x>
@@ -336,7 +352,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>308</x>
-      <y>487</y>
+      <y>479</y>
       <width>181</width>
       <height>52</height>
      </rect>
@@ -364,7 +380,7 @@ p, li { white-space: pre-wrap; }
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
+    <enum>BottomToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
     <bool>false</bool>

@@ -129,16 +129,35 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="CommFuncs.cpp" />
+    <ClCompile Include="TreeDisplayer.cpp" />
+    <ClCompile Include="TreePanel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinaryTree.hpp" />
+    <ClInclude Include="CommFuncs.h" />
+    <QtMoc Include="TreePanel.h" />
+    <QtMoc Include="TreeDisplayer.h" />
     <QtMoc Include="HuffmanMain.h" />
+    <ClInclude Include="Dictionary.hpp" />
+    <ClInclude Include="HuffmanTree.hpp" />
+    <ClInclude Include="LinkedQueue.hpp" />
+    <ClInclude Include="LinkedSet.hpp" />
+    <ClInclude Include="LinkedStack.hpp" />
+    <ClInclude Include="MinHeap.h" />
+    <ClInclude Include="Node.hpp" />
+    <ClInclude Include="Notifier.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="HuffmanMain.ui" />
+    <QtUic Include="TreeDisplayer.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="HuffmanMain.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Desktop\新建文件夹\resource\background.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
