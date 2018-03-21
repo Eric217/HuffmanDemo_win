@@ -1,2 +1,2 @@
 # HuffmanDemo_win
-给同学写的课设
+给同学 yyl 写的课设
